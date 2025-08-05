@@ -14,12 +14,14 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="text-center mt-10">
-          <h2 className="text-2xl font-bold mb-4">Something went wrong</h2>
-          <p>{this.state.error?.message || "An unexpected error occurred."}</p>
+        <div className="error-boundary-container">
+          <h2 className="error-title">Something went wrong</h2>
+          <p className="error-message">
+            {this.state.error?.message || "An unexpected error occurred."}
+          </p>
           <button
             onClick={() => window.location.reload()}
-            className="mt-4 bg-blue-600 text-white p-2 rounded"
+            className="error-reload-btn"
           >
             Reload Page
           </button>

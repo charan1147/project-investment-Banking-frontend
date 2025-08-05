@@ -1,0 +1,214 @@
+/* Navigation */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+/* Error Boundary */
+.error-boundary-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #d9534f;
+}
+
+.error-message,
+.error-text {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Add Investment / Forms */
+.access-denied {
+    margin-top: 40px;
+    text-align: center;
+    color: #d9534f;
+    font-size: 1.2rem;
+}
+
+.admin-form-container,
+.login-container,
+.payment-container,
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title,
+.login-title,
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-input,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn,
+.form-button,
+.btn,
+.btn-primary {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.submit-btn:hover,
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.btn:disabled,
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Home */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.home-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.home-balance {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+/* Investment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.investment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.investment-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+
+.investment-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.investment-detail {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.no-data-text {
+    font-style: italic;
+    color: #777;
+}
+
+/* Payment */
+.balance-text {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.centered-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}

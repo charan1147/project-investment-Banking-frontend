@@ -12,46 +12,46 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4">
-      <ul className="flex space-x-6 max-w-7xl mx-auto">
-        <li>
-          <NavLink to="/" className="hover:underline">
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <NavLink to="/" className="navbar-link">
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/investments" className="hover:underline">
+        <li className="navbar-item">
+          <NavLink to="/investments" className="navbar-link">
             Investments
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/payment" className="hover:underline">
+        <li className="navbar-item">
+          <NavLink to="/payment" className="navbar-link">
             Deposit
           </NavLink>
         </li>
         {user?.role === "admin" && (
-          <li>
-            <NavLink to="/admin/add-investment" className="hover:underline">
+          <li className="navbar-item">
+            <NavLink to="/admin/add-investment" className="navbar-link">
               Add Investment
             </NavLink>
           </li>
         )}
         {!user ? (
           <>
-            <li>
-              <NavLink to="/login" className="hover:underline">
+            <li className="navbar-item">
+              <NavLink to="/login" className="navbar-link">
                 Login
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/register" className="hover:underline">
+            <li className="navbar-item">
+              <NavLink to="/register" className="navbar-link">
                 Register
               </NavLink>
             </li>
           </>
         ) : (
-          <li>
-            <button onClick={handleLogout} className="hover:underline">
+          <li className="navbar-item">
+            <button onClick={handleLogout} className="navbar-link logout-btn">
               Logout
             </button>
           </li>

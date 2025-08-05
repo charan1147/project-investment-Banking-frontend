@@ -21,22 +21,27 @@ function Investments() {
   }, []);
 
   return (
-    <div>
-      <h2>Investments</h2>
-      {error && <p>{error}</p>}
+    <div className="container">
+      <h2 className="section-title">Investments</h2>
+      {error && <p className="error-text">{error}</p>}
+
       {investments.length > 0 ? (
-        <ul>
+        <ul className="investment-list">
           {investments.map((investment) => (
-            <li key={investment._id}>
-              <h3>{investment.name}</h3>
-              <p>Type: {investment.type}</p>
-              <p>Minimum Amount: {investment.minAmount}</p>
-              <p>Return Rate: {investment.returnRate}%</p>
+            <li className="investment-card" key={investment._id}>
+              <h3 className="investment-name">{investment.name}</h3>
+              <p className="investment-detail">Type: {investment.type}</p>
+              <p className="investment-detail">
+                Minimum Amount: ₹{investment.minAmount}
+              </p>
+              <p className="investment-detail">
+                Return Rate: {investment.returnRate}%
+              </p>
             </li>
           ))}
         </ul>
       ) : (
-        <p>No investments available</p>
+        <p className="no-data-text">No investments available</p>
       )}
     </div>
   );

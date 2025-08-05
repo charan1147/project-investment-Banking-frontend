@@ -5,13 +5,13 @@ function Home() {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Investment Banking</h1>
-      <p className="text-lg mb-4">
+    <div className="home-container">
+      <h1 className="home-title">Welcome to Investment Banking</h1>
+      <p className="home-subtitle">
         Explore investment opportunities and manage your portfolio.
       </p>
       {user && (
-        <p className="text-lg">
+        <p className="home-balance">
           Current Balance: ₹{user.balance ? user.balance.toFixed(2) : "0.00"}
         </p>
       )}

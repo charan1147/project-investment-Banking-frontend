@@ -26,36 +26,33 @@ function Login() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1">Email:</label>
+    <div className="login-container">
+      <h2 className="login-title">Login</h2>
+      <form onSubmit={handleSubmit} className="login-form">
+        <div className="form-group">
+          <label className="form-label">Email:</label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-2 border rounded"
+            className="form-input"
             required
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1">Password:</label>
+        <div className="form-group">
+          <label className="form-label">Password:</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-2 border rounded"
+            className="form-input"
             required
           />
         </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
-        >
+        <button type="submit" className="btn-primary">
           Login
         </button>
-        {error && <p className="text-red-500 mt-2">{error}</p>}
+        {error && <p className="error-text">{error}</p>}
       </form>
     </div>
   );

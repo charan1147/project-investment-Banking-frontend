@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import Investments from "./pages/Investments";
 import Payment from "./pages/Payment";
 import AdminAddInvestment from "./pages/AdminAddInvestment";
+import "./App.css"
 
 function App() {
   return (
